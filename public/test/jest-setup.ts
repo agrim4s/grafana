@@ -3,6 +3,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import 'jquery';
 import $ from 'jquery';
 import 'mutationobserver-shim';
+import 'isomorphic-fetch';
 
 const global = window as any;
 global.$ = global.jQuery = $;
