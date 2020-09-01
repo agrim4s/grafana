@@ -55,12 +55,52 @@ export class ErrorPage extends PureComponent<Props> {
                     </div>
                     <div>
                       <h3>Sorry for the inconvenience</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="error-column help-box">
+                <div className="error-row current-box">
+                  <p className="current-text">Help Section</p>
+                </div>
+                <div className="error-row" style={{ flex: 1 }}>
+                  <Icon name="minus-circle" className="error-minus" />
+                  <div className="error-column error-space-between error-full-width">
+                    <div>
                       <p>
                         Please go back to your{' '}
                         <a href={config.appSubUrl} className="error-link">
                           home dashboard
                         </a>{' '}
                         and try again.
+                      </p>
+                      <p>
+                        <h3 className="text-center">OR</h3>
+                      </p>
+                      <p>
+                        Have a look at available{' '}
+                        <ul>
+                          <li>
+                            <a href={`${config.appSubUrl}/datasources`} className="error-link">
+                              Existing Datasources
+                            </a>
+                          </li>
+                          <li>
+                            <a href={`${config.appSubUrl}/dashboards`} className="error-link">
+                              Existing Dashboards
+                            </a>
+                          </li>
+                          <li>
+                            <a href={`${config.appSubUrl}/org/users`} className="error-link">
+                              User Previlages
+                            </a>
+                          </li>
+                          <li>
+                            <a href={`${config.appSubUrl}/admin/stats`} className="error-link">
+                              Grafana server stats
+                            </a>
+                          </li>
+                        </ul>
                       </p>
                       <p>
                         If the error persists, seek help on the{' '}

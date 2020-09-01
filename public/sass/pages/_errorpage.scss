@@ -22,15 +22,19 @@
 }
 
 .graph-box {
-  width: 62%;
+  width: 40%;
   padding: $space-xl $space-md;
 }
 
 .info-box {
-  width: 38%;
+  width: 30%;
   padding: $space-xl $space-md;
 }
 
+.help-box {
+  width: 30%;
+  padding: $space-xl $space-md;
+}
 .graph-percentage {
   padding: 0 0 18px;
 }
@@ -79,11 +83,14 @@
 
 @include media-breakpoint-down(sm) {
   .graph-box {
-    width: 50%;
+    width: 40%;
   }
 
   .info-box {
-    width: 50%;
+    width: 30%;
+  }
+  .help-box {
+    width: 30%;
   }
 }
 
@@ -103,4 +110,7 @@
   .error-full-width {
     width: 100%;
   }
+}
+.text-center {
+  text-align: center;
 }
